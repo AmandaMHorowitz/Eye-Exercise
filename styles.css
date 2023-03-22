@@ -8,7 +8,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 100%;
+  width: 70%;
   text-align: center;
 }
 .eye {
@@ -30,4 +30,32 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.eyes {
+  grid-area: eyes;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  background-color: white;
+  color: black;
+
+  grid-template-columns: 20% 70%;
+  grid-template-areas:
+    'sidebar eyes';
+}
+
+.sidebar {
+  background-color: LightGray;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+  font-family: Helvetica (sans-serif);
 }
